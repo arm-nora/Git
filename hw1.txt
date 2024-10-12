@@ -1,0 +1,189 @@
+GIT Homework 1
+
+Как отправить ДЗ на проверку.
+ 1. Создайте текстовый файл как в первом ДЗ по Terminal.
+ 2. Сценарий перенесите в этот файл.
+ 3. Напротив каждого действия - напишите команду в GitBash
+
+Файл со сценарием и ссылку на свой гит хаб отправляйте менторам на проверку.
+
+JSON
+ 4. Создать внешний репозиторий c названием JSON.
+
+ 5. Клонировать репозиторий JSON на локальный компьютер
+
+ git clone https://github.com/arm-nora/JSON.git
+
+Cloning into 'JSON'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+ 6. Внутри локального JSON создать файл “new.json”.
+
+touch new.json
+
+ 7. Добавить файл под гит.
+
+git add new.json
+
+ 8. Закоммитить файл
+
+git commit - m "1"   
+
+ 9. Отправить файл на внешний GitHub репозиторий.
+
+git push
+
+ 10. Отредактировать содержимое файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+
+vim new.json
+{
+	"Name": "Eleonora",
+	"Second Name": "Armizonova",
+	"Age": 43,
+	"Pets": 0,
+	"Salary": "2000$"
+}
+
+ 11. Отправить изменения на внешний репозиторий.
+git add new.json
+git commit -m "Add new lines"
+
+[main 501e580] Add new lines
+ Committer: Элеонора Армизонова <eleonoraarmizonova@MacBook-Air-Eleonora.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+    git config --global --edit
+After doing this, you may fix the identity used for this commit with:
+    git commit --amend --reset-author
+ 1 file changed, 7 insertions(+)
+
+git push
+
+ 12. Создать файл preferences.json 
+
+touch preferences.json 
+
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+
+{ 
+	"Film": "House by the lake",
+	"Serials": "Only for love" China,
+	"Favourit food": "Any patato food",
+	"Favourit season": "Spring",
+	"Country for travel": "Singapur"
+}
+ 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+touch skills.json
+vim skills.json 
+
+{
+	"Theory": "Testing Basics, Test design techniques, Client-server architecture, Database",
+       "Instruments": "Terminal, Git, Postman, SQL, Jmeter, Mobile testing, Webservises, Swagger, Python"
+}
+
+ 15. Отправить сразу 2 файла на внешний репозиторий 
+git add preferences.json skills.json
+git commit -m "Add new files"
+git push
+
+ 16. На веб интерфейсе создать файл bug_report.json
+Add file   Create new file 
+
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе
+Commit changes
+
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON
+Edit
+
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Commit changes
+
+ 20. Синхронизировать внешний и локальный репозиторий JSON
+git pull
+
+XML
+
+ 21. Создать внешний репозиторий c названием XML
+New  Create repository
+
+ 22. Клонировать репозиторий XML на локальный компьютер
+git clone git@github.com:arm-nora/XML.git
+
+ 23. Внутри локального XML создать файл “new.xml”
+touch new.xml
+
+ 24. Добавить файл под гит
+git add new.xml
+
+ 25. Закоммитить файл
+git commit -m "Add new file"
+
+ 26. Отправить файл на внешний GitHub репозиторий
+git push
+
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+
+nano new.xml
+<info>
+<FirstName> Eleonora </Name>
+<LastName> Armizonova </LastName>
+<Age> 43 </Age>
+<Pets> 0 </Pets>
+<Salary> 2000$ </Salary> 
+</info>
+	
+ 28. Отправить изменения на внешний репозиторий.
+git add new.xml
+git commit -m "xml edit"
+git push
+
+ 29. Создать файл preferences.xml
+touch preferences.xml
+
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML
+nano new.xml
+<preferences>
+	<Film> "House by the lake" </Film>
+	<Serials> "Only for love" "China" </Serials>
+	<Food> Bacery </Food>
+	<Season> Spring </Season>
+	<Country> Singapure </Country>
+</preferences>
+
+ 31. Создать файл skills.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+touch skills.xml
+nano skills.xml 
+
+<skills>
+<Theory> Testing Basics, Test design techniques, Client-server architecture, Database <Theory>
+<Instruments> Terminal, Git, Postman, SQL, Jmeter, Mobile testing, Webservises, Swagger, Python <Instruments>
+</skills>
+
+ 32. Сделать коммит в одну строку
+git add preferences.xml skills.xml
+git commit -m "Create new files"
+
+ 33. Отправить сразу 2 файла на внешний репозиторий
+git push
+
+ 34. На веб интерфейсе создать файл bug_report.xml
+Add file   Create new file 
+
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе
+Commit changes
+
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML
+Edit 
+
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе
+Commit changes
+
+ 38. Синхронизировать внешний и локальный репозиторий XML
+git pull
+
